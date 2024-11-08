@@ -30,7 +30,7 @@ function displayCoffees(coffees) {
     });
 }
 
-document.getElementById('search').addEventListener('keyup', function() {
+document.querySelector('#search').addEventListener('keyup', function() {
     const searchTerm = this.value.toLowerCase();
 
     fetch('https://api.sampleapis.com/coffee/hot')
